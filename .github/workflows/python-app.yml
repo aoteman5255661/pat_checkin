@@ -29,10 +29,12 @@ jobs:
     - name: test
       env:
         PTASession: ${{ secrets.PTASESSION }}
+        pushplus_token: ${{ secrets.pushplus_token }}
       id: step1
       run: |
         echo "$( python main.py )"
         echo "${{ secrets.PTASESSION }}"
+        echo "${{ secrets.pushplus_token }}"
 #    - name: Lint with flake8
 #      run: |
 #        # stop the build if there are Python syntax errors or undefined names
