@@ -23,7 +23,8 @@ headers = {
   # 'sec-fetch-dest': 'empty',
   # 'referer': 'https://pintia.cn/market',
   # 'cookie': 'PTASession=58f96fbe-d2b8-472f-a550-4e6dde61f4de',
-  'PTASession': os.getenv('PTASession')
+  'cookie': 'PTASession={}'.format(os.getenv('PTASession')),
+  # 'PTASession': os.getenv('PTASession')
 }
 
 response = requests.request("POST", url, headers=headers, data=payload)
