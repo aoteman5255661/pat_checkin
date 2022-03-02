@@ -3,4 +3,4 @@
 登录 https://pintia.cn/market
 
 
- ![avatar](../1.JPG)
+ ![avatar](img/1.JPG)
