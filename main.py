@@ -10,4 +10,4 @@ headers = {
 response = requests.request("POST", url, headers=headers).json()
 
 print(response)
-print(response['message'])
+print(response['error']['message'])
