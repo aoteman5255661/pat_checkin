@@ -7,6 +7,7 @@ headers = {
   'cookie': 'PTASession={}'.format(os.getenv('PTASession')),
 }
 
-response = requests.request("POST", url, headers=headers)
+response = requests.request("POST", url, headers=headers).json()
 
-print(response.text)
+print(response)
+print(response['message'])
