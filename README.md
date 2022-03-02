@@ -1,4 +1,5 @@
 # PAT 教育商店签到 action版
+每天定时执行签到action
 
 登录 https://pintia.cn/market
 
