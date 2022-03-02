@@ -12,8 +12,8 @@ fork 本项目,将PATASession填入secret中
  ![avatar](img/3.JPG)
 
 Name 填写PATASession
-Value 填写PATASession的值
 
+Value 填写PATASession的值
 
 可使用plushpush将结果推送至微信
 http://www.pushplus.plus/
