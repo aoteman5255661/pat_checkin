@@ -9,9 +9,9 @@ headers = {
   'cookie': 'PTASession={}'.format(os.getenv('PTASession')),
 }
 
-response = requests.request("POST", url, headers=headers).json()
+response = requests.request("POST", url, headers=headers)
 print(response.text)
-print(response)
+response = response.json()
 print(response['error']['message'])
 response['time'] = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(1594368331))
 token = os.getenv('pushplus_token')
