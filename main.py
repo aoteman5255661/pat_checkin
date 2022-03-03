@@ -10,10 +10,10 @@ headers = {
 }
 
 response = requests.request("POST", url, headers=headers).json()
-
+print(response.text)
 print(response)
 print(response['error']['message'])
-response['time'] = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(1594368331))
+response['time'] = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(1594368331))
 token = os.getenv('pushplus_token')
 if not token:
   print("没有设置pushplus_token返回")
